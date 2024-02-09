@@ -1,0 +1,96 @@
+.loginContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+  overflow: clip;
+
+  .centerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding : 3rem;
+    width: 40rem;
+
+    border-radius: 2rem;
+    border: #eee solid 3px;
+
+    animation: puffIn 1s ease-in-out;
+
+    .projectLogo{
+      opacity: 0.3;
+      margin-bottom: 2rem;
+    }
+    .projectTitle{
+      font-size : 4rem;
+      margin-bottom: 4rem;
+    }
+    .infoContainer{
+      display: flex;
+      flex-direction : column;
+
+      .idContainer{
+        height: 5rem;
+        .idInput{
+          width: 25rem;
+          height : 3rem;
+
+          margin-bottom : 1rem;
+
+          transition: width 0.3s;
+
+          font-size: 1.5rem;
+
+          padding : 0.5rem;
+
+          &:focus{
+            width: 30rem;
+          }
+        }
+      }
+      .passContainer{
+        height: 5rem;
+        .passInput{
+          width: 25rem;
+          height : 3rem;
+          margin-bottom : 2rem;
+
+          transition: width 0.3s;
+
+          font-size: 1.5rem;
+
+          padding : 0.5rem;
+
+          &:focus{
+            width: 30rem;
+          }
+        }
+      }
+      .buttonContainer{
+        height: 5rem;
+        .loginButton{
+          width: 25rem;
+          height: 3rem;
+
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@keyframes puffIn {
+  0%{
+    opacity: 0%;
+    transform: scale(1.3, 1.3);
+    filter: blur(4px);
+  }
+  100%{
+    opacity: 100%;
+    transform: scale(1, 1);
+    filter: blur(0px);
+  }
+}

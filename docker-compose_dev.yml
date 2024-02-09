@@ -1,0 +1,14 @@
+# 개발용 compose 파일 -> 실시간 파일 변화 구축
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile_dev
+    container_name: code-creature-next-dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules

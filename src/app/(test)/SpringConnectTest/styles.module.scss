@@ -1,0 +1,21 @@
+.testButtonContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+
+  .buttonTest{
+    display: flex;
+    flex-direction: column;
+
+    padding: 4rem;
+
+    .buttonTitle{
+      font-size: 3rem;
+    }
+    button{
+
+    }
+  }
+}
